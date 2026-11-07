@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+  --color-marca-50: #eff6ff;
+  --color-marca-100: #dbeafe;
+  --color-marca-200: #bfdbfe;
+  --color-marca-500: #2185f5;
+  --color-marca-600: #126de0;
+  --color-marca-700: #0d55bd;
+  --color-marca-900: #0b1d3a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white font-sans text-slate-900 antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  @apply bg-blue-200 text-slate-900;
+}
